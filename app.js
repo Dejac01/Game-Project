@@ -9,45 +9,53 @@
 // Card sets Array
 const cardSet =[
     {
-        name: 'i8',
+        car: 'i8',
         img: 'https://www.westcoastexoticcars.com/imagetag/49/main/l/Used-2016-BMW-i8-1610048744.jpg'
     },
     {
-        name: 'Lamb',
+        car: 'Lamb',
         img: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/c200-lamborghini-sian-rds-final-150-1594215316.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*'
     },
     {
-        name: 'rolls',
+        car: 'rolls',
         img: 'https://mediapool.bmwgroup.com/cache/P9/202110/P90442352/P90442352-rolls-royce-announces-black-badge-ghost-the-purest-black-badge-yet-2249px.jpg'
     },
     {
-        name: 'gwagon',
+        car: 'gwagon',
         img: 'https://pbs.twimg.com/media/E3llxWHWYAIw_kJ.jpg'
     },
     {
-        name: 'range',
+        car: 'range',
         img: 'https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/110005554/SALGW2SE2JA514373/27f2460a3be05f0fa63e3b4fe55b6694.jpg'
+    },
+    {
+        car: 'gold lamb',
+        img: 'https://s1.cdn.autoevolution.com/images/news/worlds-most-expensive-lamborghini-the-75m-aventador-carved-out-of-gold-165823-7.jpg'
     },
    
     {
-        name: 'i8',
+        car: 'i8',
         img: 'src/images/fries.png'
     },
     {
-        name: 'Lamb',
+        car: 'Lamb',
         img: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/c200-lamborghini-sian-rds-final-150-1594215316.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*'
     },
     {
-        name: 'rolls',
+        car: 'rolls',
         img: 'https://mediapool.bmwgroup.com/cache/P9/202110/P90442352/P90442352-rolls-royce-announces-black-badge-ghost-the-purest-black-badge-yet-2249px.jpg'
     },
     {
-        name: 'gwagon',
+        car: 'gwagon',
         img: 'https://pbs.twimg.com/media/E3llxWHWYAIw_kJ.jpg'
     },
     {
-        name: 'range',
+        car: 'range',
         img: 'https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/110005554/SALGW2SE2JA514373/27f2460a3be05f0fa63e3b4fe55b6694.jpg'
+    },
+    {
+        car: 'goldlamb',
+        img: 'https://s1.cdn.autoevolution.com/images/news/worlds-most-expensive-lamborghini-the-75m-aventador-carved-out-of-gold-165823-7.jpg'
     }
     
 ]
