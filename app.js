@@ -64,9 +64,10 @@ cardSet.sort(() => 0.5 - Math.random())
 console.log(cardSet);
 
 //Add & define variables and get DOM element
-//grid, scoreboard, popup alert, playAgain and clickBoard
+//*scoreboard, popup alert, playAgain and clickBoard*
 
 //Flip Card Function
+
 
 // Add click function for images
 
@@ -78,5 +79,6 @@ function arrangeCards() {
 
 //Check for match function
 
-//replay function
+
+//Rematch function
 
