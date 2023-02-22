@@ -1,4 +1,12 @@
-   .scores { 
+  .board{
+display: flex;
+flex-wrap: wrap;
+height: 300px;
+width: 400px;
+  }
+  
+  
+  .scores { 
             display: flex; 
             justify-content: space-between; 
             padding: 20px 30px; 
