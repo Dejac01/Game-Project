@@ -5,6 +5,7 @@
 //Second round will increase in difficulty with less time to view cards, less time to match cards and more cards will be added
 //The player with the most matched sets in the alloted time wins. 
 
+document.addEventListener("DOMContentLoaded", () => {
 
 // Card sets Array
 const cardSet =[
@@ -64,7 +65,7 @@ cardSet.sort(() => 0.5 - Math.random())
 console.log(cardSet);
 
 //Board Function
-
+const board = document.querySelector('.board')
 
 //Add & define variables and get DOM element
 //*scoreboard, popup alert, playAgain and clickBoard*
