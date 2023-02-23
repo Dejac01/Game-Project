@@ -84,6 +84,8 @@ function MyBoard(){
     }
 }
 
+MyBoard();
+
 //Add & define variables and get DOM element
 //*scoreboard, popup alert, playAgain and clickBoard*
 
