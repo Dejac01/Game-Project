@@ -102,6 +102,8 @@ function flipCard() {
     } 
     }
 
+    flipCard();
+
 // Add click function for images
 
 
@@ -109,6 +111,8 @@ function flipCard() {
 function arrangeCard() { 
     cardSet.sort(() => 0.5 - Math.random())
     }
+
+    arrangeCard();
 
 //Timer Function
 
