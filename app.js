@@ -67,7 +67,7 @@ console.log(cardSet);
 //Board Function
 const board = document.querySelector('.board')
 
-function createBoard(){
+function createBoard() {
     for (let i = 0; i <cardSet.length; i++){
         const card = document.createElement('img');
         card.setAttribute('src','https://i0.wp.com/www.car-revs-daily.com/wp-content/uploads/2014/03/HYUNDAI-Coupe-Designs-HND-9-animated-gif-header.gif')
@@ -81,14 +81,14 @@ function createBoard(){
 
 
 //Flip Card Function
-function cardFlip () { 
+function flipCard() { 
     let selected = this.dataset.id;
-    cardsSelected.push(cardArray[selected].name); 
+    cardsSelected.push(cardSet[selected].name); 
     cardsId.push(selected); 
     this.classList.add("flip"); 
-    this.setAttribute("src", cardArray[selected].img); 
+    this.setAttribute("src", cardSet[selected].img); 
     if (cardsId.length === 2) { 
-    setTimeout(checkForMatch, 10);
+    setTimeout(checkForMatch, 500);
     } 
     }
 
