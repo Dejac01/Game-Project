@@ -7,8 +7,8 @@
  .board{
 display: flex;
 flex-wrap: wrap;
-height: 400px;
-width: 600px;
+height: 450px;
+width: 700px;
 border: solid rgb(255, 255, 255);
 margin: auto;
   }
@@ -20,6 +20,8 @@ margin: auto;
             padding: 20px 30px; 
             font-size: 23px; 
             color: white;
+            font-size: 2em;
+           /* border: solid white; */
             } 
 
             .title{
