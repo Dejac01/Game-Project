@@ -70,11 +70,10 @@ const board = document.querySelector('.board')
 function createBoard(){
     for (let i = 0; i <cardArray.length; i++){
         const card = document.createElement('img');
-        card.setAttribute('src',
-     'https://i0.wp.com/www.car-revs-daily.com/wp-content/uploads/2014/03/HYUNDAI-Coupe-Designs-HND-9-animated-gif-header.gif')
+        card.setAttribute('src','https://i0.wp.com/www.car-revs-daily.com/wp-content/uploads/2014/03/HYUNDAI-Coupe-Designs-HND-9-animated-gif-header.gif')
         card.setAttribute('data-id', i)
         card.addEventListener('click', flipCard)
-        grid.appendChild(card)
+        board.appendChild(card)
     }
 }
 //Add & define variables and get DOM element
