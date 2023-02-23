@@ -1,9 +1,10 @@
   .board{
 display: flex;
 flex-wrap: wrap;
-height: 300px;
-width: 400px;
-border: solid salmon;
+height: 400px;
+width: 600px;
+border: solid black;
+margin: auto;
   }
   
   

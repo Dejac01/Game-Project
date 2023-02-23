@@ -5,7 +5,7 @@
 //Second round will increase in difficulty with less time to view cards, less time to match cards and more cards will be added
 //The player with the most matched sets in the alloted time wins. 
 
-document.addEventListener("DOMContentLoaded", () => {
+// document.addEventListener("DOMContentLoaded", () => {
 
 // Card sets Array
 const cardSet =[
@@ -67,12 +67,21 @@ console.log(cardSet);
 //Board Function
 const board = document.querySelector('.board')
 
+function createBoard(){
+    for (let i = 0; i <cardArray.length; i++){
+        const card = document.createElement('img');
+        card.setAttribute('src', 'https://i0.wp.com/www.car-revs-daily.com/wp-content/uploads/2014/03/HYUNDAI-Coupe-Designs-HND-9-animated-gif-header.gif')
+        card.setAttribute('data-id', i)
+        card.addEventListener('click', flipCard)
+        grid.appendChild(card)
+    }
+}
 //Add & define variables and get DOM element
 //*scoreboard, popup alert, playAgain and clickBoard*
 
 
 //Flip Card Function
-function flipCard() { 
+function cardFlip () { 
     let selected = this.dataset.id;
     cardsSelected.push(cardArray[selected].name); 
     cardsId.push(selected); 
@@ -97,4 +106,3 @@ function arrangeCards() {
 
 
 //Rematch function
-
