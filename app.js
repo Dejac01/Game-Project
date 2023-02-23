@@ -64,6 +64,13 @@ const cardSet =[
 cardSet.sort(() => 0.5 - Math.random())
 console.log(cardSet);
 
+
+//Banner
+const showBanner = (msg) => {
+    let bannerDisplay = document.querySelector(".banner");
+    bannerDisplay.innerHTML = msg;
+  };
+
 //Board Function
 const board = document.querySelector('.board')
 
