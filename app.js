@@ -12,7 +12,7 @@ const cardSet =[
     {
         car: 'i8',
         img: 'https://www.westcoastexoticcars.com/imagetag/49/main/l/Used-2016-BMW-i8-1610048744.jpg'
-    },
+    }, 
     {
         car: 'Lamb',
         img: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/c200-lamborghini-sian-rds-final-150-1594215316.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*'
@@ -92,14 +92,14 @@ MyBoard();
 
 //Flip Card Function
 function flipCard(){
-    const cardCoice = this.getAttribute('data-id')
+    const cardChoice = this.getAttribute('data-id')
     cardsChosen.push(cardSet[cardChoice].name)  
     cardsChosenId.push(cardId)  
     this.setAttribute('src', cardSet[cardChoice].img)
     if (cardsChosen.length === 2){
         setTimeout(checkForMatch, 500)
     }
-    console.log(cardsChosen);
+    console.log(cardsChosen); 
 }
 
 
