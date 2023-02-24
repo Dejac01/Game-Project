@@ -94,10 +94,10 @@ MyBoard();
 function flipCard(){
     const cardChoice = this.getAttribute('data-id')
     cardsChosen.push(cardSet[cardChoice].name)  
-    cardsChosenId.push(cardId)  
+    cardsChosenId.push(cardChoice)  
     this.setAttribute('src', cardSet[cardChoice].img)
     if (cardsChosen.length === 2){
-        setTimeout(checkForMatch, 500)
+        setTimeout(checkForMatch, 10)
     }
     console.log(cardsChosen); 
 }
