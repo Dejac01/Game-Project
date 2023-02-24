@@ -91,7 +91,7 @@ MyBoard();
 
 
 //Flip Card Function
-function onClickflipCard(){
+function flipCard(){
     const cardChoice = this.getAttribute('data-id')
     cardsChosen.push(cardSet[cardChoice].name)  
     cardsChosenId.push(cardChoice)  
@@ -101,8 +101,7 @@ function onClickflipCard(){
     }
     console.log(cardsChosen); 
 }
-
-
+flipCard();
 
 
     
