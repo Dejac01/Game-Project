@@ -92,17 +92,7 @@ MyBoard();
 
 //Flip Card Function
 function flipCard() { 
-    let selected = this.dataset.id;
-    cardsSelected.push(cardSet[selected].name); 
-    cardsId.push(selected); 
-    this.classList.add("flip"); 
-    this.setAttribute("src", cardSet[selected].img); 
-    if (cardsId.length === 2) { 
-    setTimeout(checkForMatch, 500);
-    } 
-    }
-
-    flipCard();
+    
 
 // Add click function for images
 
