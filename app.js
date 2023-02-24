@@ -77,7 +77,7 @@ const board = document.querySelector('.board')
 function MyBoard(){
     for (let i = 0; i <cardSet.length; i++){
         const card = document.createElement('img');
-        card.setAttribute('src', 'https://i.gifer.com/origin/ad/adb3db43ada8dedf6c0307438011c081.gif')
+        card.setAttribute('src', 'https://i0.wp.com/www.car-revs-daily.com/wp-content/uploads/2014/03/LaFerrari-NERO-Animated-Turntable-GIF.gif?ssl=1')
         card.setAttribute('data-id', i)
         card.addEventListener('click', flipCard)
         board.appendChild(card)
@@ -91,7 +91,20 @@ MyBoard();
 
 
 //Flip Card Function
-function flipCard() { 
+function flipCard(){
+    let cardId = this.getAttribute('data-id')
+    cardsChosen.push(cardSet[cardId].name)  
+    cardsChosenId.push(cardId)  
+    this.setAttribute('src', cardSet[cardId].img)
+    if (cardsChosen.length === 2){
+        setTimeout(checkForMatch, 500)
+    }
+    console.log(cardsChosen);
+}
+
+
+
+
     
 
 // Add click function for images
