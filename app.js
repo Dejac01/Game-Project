@@ -92,10 +92,10 @@ MyBoard();
 
 //Flip Card Function
 function flipCard(){
-    let cardId = this.getAttribute('data-id')
-    cardsChosen.push(cardSet[cardId].name)  
+    const cardCoice = this.getAttribute('data-id')
+    cardsChosen.push(cardSet[cardChoice].name)  
     cardsChosenId.push(cardId)  
-    this.setAttribute('src', cardSet[cardId].img)
+    this.setAttribute('src', cardSet[cardChoice].img)
     if (cardsChosen.length === 2){
         setTimeout(checkForMatch, 500)
     }
@@ -111,7 +111,7 @@ function flipCard(){
 
 
 // arrangeCard function using Math.random
-function arrangeCard() { 
+function arrangeCard() {
     cardSet.sort(() => 0.5 - Math.random())
     }
 
