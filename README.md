@@ -1,5 +1,5 @@
 # Game-Project
-This Car Card Matching Game is a simple card game where players need to match pairs by clicking on and flipping over 2 cards at a time.  
+This Card Matching Game is a simple, yet fun memorization game where players need to match card pairs by clicking on and flipping over 2 cards at a time.  
 In this repo, I utilized Html, CSS, and JavaScript.
 The main functions of focus within Javascript are as follows:
 Utilizing for loops,
