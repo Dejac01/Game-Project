@@ -7,9 +7,11 @@ addEventListener,
 set and getAttribute,
 document.querySelector,
 createElement,
+and instructions for the game utilizing the alert function to begin,
 
 
-Instructions for the game utilizing the alert function to begin
+
+
 INSTRUCTIONS:
 Player one starts by flipping over one card before deciding to flip over another
 If the card flipped matches, an alert notifies you of your match and 3 points are added to the score.
