@@ -6,7 +6,7 @@
 //The player with the most matched sets in the alloted time wins. 
 
 document.addEventListener('DOMContentLoaded', () => {
-
+  
 // Card sets Array
 const cardSet =[
     {
