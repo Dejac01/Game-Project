@@ -86,10 +86,6 @@ function MyBoard(){
 
 MyBoard();
 
-//Add & define variables and get DOM element
-//*scoreboard, popup alert, playAgain and clickBoard*
-
-
 //Flip Card Function
 function flipCard(){
     const cardChoice = this.getAttribute('data-id')
