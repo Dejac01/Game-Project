@@ -31,7 +31,7 @@ const cardSet =[
         img: 'https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/110005554/SALGW2SE2JA514373/27f2460a3be05f0fa63e3b4fe55b6694.jpg'
     },
     {
-        car: 'goldLamb',
+        car: 'bb',
         img: 'https://media.wired.com/photos/5927284ff3e2356fd800b9b4/master/w_1600%2Cc_limit/03_CHIRON_34-front_WEB.jpg'
     },
    
@@ -56,7 +56,7 @@ const cardSet =[
         img: 'https://s3.us-east-2.amazonaws.com/dealer-inspire-vps-vehicle-images/110005554/SALGW2SE2JA514373/27f2460a3be05f0fa63e3b4fe55b6694.jpg'
     },
     {
-        car: 'goldLamb',
+        car: 'bb',
         img: 'https://media.wired.com/photos/5927284ff3e2356fd800b9b4/master/w_1600%2Cc_limit/03_CHIRON_34-front_WEB.jpg'
     }
     
