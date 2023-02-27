@@ -85,7 +85,7 @@ function MyBoard(){
         card.setAttribute('data-id', i)
         card.setAttribute("class", "cardsize")
         card.addEventListener('click', flipCard)
-        card.style.margin = "4px";
+        card.style.margin = "5px";
         board.appendChild(card)
         showPopup("Lets Begin!");
     }
