@@ -2,11 +2,13 @@
 This Car Card Matching Game is a simple card game where players need to match pairs by clicking on and flipping over 2 cards at a time.  
 In this repo, I utilized Html, CSS, and JavaScript.
 The main functions of focus within Javascript are as follows:
-Utilizing for loops
-addEventListener
-set and getAttribute
-document.querySelector
-createElement
+Utilizing for loops,
+addEventListener,
+set and getAttribute,
+document.querySelector,
+createElement,
+
+
 Instructions for the game utilizing the alert function to begin
 INSTRUCTIONS:
 Player one starts by flipping over one card before deciding to flip over another
