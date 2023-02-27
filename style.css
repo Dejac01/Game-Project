@@ -31,7 +31,7 @@ margin: auto;
                 font-style: italic;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 animation: color;
-                background-color: blue;
+                background-color: black;
                 animation-duration: 4s;
                 
             }
@@ -42,6 +42,6 @@ margin: auto;
             }
 
             @keyframes color {
-                from {background-color: blue;}
+                from {background-color: black;}
                 to {background-color: rgb(201, 26, 201);}
               }
