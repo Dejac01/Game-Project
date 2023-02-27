@@ -70,6 +70,7 @@ const showPopup = (msg) => {
     let popupDisplay = document.querySelector(".popup");
     popupDisplay.innerHTML = msg;
   }; 
+showPopup();
 
 //Board Function
 const board = document.querySelector('.board')
