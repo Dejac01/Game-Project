@@ -64,7 +64,6 @@ const cardSet =[
 cardSet.sort(() => 0.5 - Math.random())
 console.log(cardSet);
 
-
 //Popup
 const showPopup = (msg) => {
     let popupDisplay = document.querySelector(".popup");
@@ -111,7 +110,7 @@ function arrangeCard() {
     cardSet.sort(() => 0.5 - Math.random())
     }
 
-    arrangeCard();
+arrangeCard();
 
 //Timer Function
 
