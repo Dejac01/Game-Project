@@ -30,9 +30,18 @@ margin: auto;
                 font-size: 3em;
                 font-style: italic;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                animation: color;
+                background-color: black;
+                animation-duration: 3s;
+                
             }
 
             .cardsize{
                 width: 150px;
                 height: 150px;
             }
+
+            @keyframes color {
+                from {background-color: black;}
+                to {background-color: rgb(201, 26, 201);}
+              }
