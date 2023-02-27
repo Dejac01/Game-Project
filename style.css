@@ -42,6 +42,11 @@ margin: auto;
             }
 
             @keyframes color {
-                from {background-color: black;}
-                to {background-color: rgb(201, 26, 201);}
-              }
+               /* from {background-color: black;}
+                to {background-color: rgb(201, 26, 201);} */
+                0%   {background-color: black;} 
+                25%  {background-color: orangered;}
+                50%  {background-color: blue;}
+                100% {background-color: rgb(201,26,201);}
+}
+              
