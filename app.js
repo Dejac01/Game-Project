@@ -81,7 +81,7 @@ const board = document.querySelector('.board')
 function MyBoard(){
     for (let i = 0; i <cardSet.length; i++){
         const card = document.createElement('img');
-        card.setAttribute('src', 'https://i0.wp.com/www.car-revs-daily.com/wp-content/uploads/2014/03/LaFerrari-NERO-Animated-Turntable-GIF.gif?ssl=1')
+        card.setAttribute('src', 'https://us.123rf.com/450wm/lkeskinen/lkeskinen1802/lkeskinen180202844/95589838-pick-me-rubber-stamp-grunge-design-with-dust-scratches-effects-can-be-easily-removed-for-a-clean.jpg?ver=6')
         card.setAttribute('data-id', i)
         card.setAttribute("class", "cardsize")
         card.addEventListener('click', showCard)
@@ -102,7 +102,6 @@ function showCard(){
     playerChoices.push(cardSet[choice].name)  
     choiceIds.push(choice)  
     this.setAttribute('src', cardSet[choice].img)
-    alert("New Image should show");
     if (cardsChosen.length === 2){
         setTimeout(checkForMatch, 5)
     }
