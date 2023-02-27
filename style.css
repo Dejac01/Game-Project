@@ -5,12 +5,12 @@ background-size: cover;}
  
  
  .board{
-display: flex;
-flex-wrap: wrap;
-height:450px;
-width: 600px;
-border: solid rgb(255, 255, 255);
-margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height:450px;
+    width: 1000px;
+    border: solid rgb(255, 255, 255);
+    margin: auto;
   }
   
   
@@ -39,6 +39,7 @@ margin: auto;
             .cardsize{
                 width: 150px;
                 height: 150px;
+                cursor: alias;
             }
 
             @keyframes color {

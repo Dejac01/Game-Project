@@ -5,7 +5,7 @@
 //Second round will increase in difficulty with less time to view cards, less time to match cards and more cards will be added
 //The player with the most matched sets in the alloted time wins. 
 
-window.alert("Instructions: Two player matching card game. During round one there will be 3 seconds to view the back of each card for memorization. Each player will take turns clicking on two cards each turn to find the matching set.The player with the most matched sets in the alloted time wins. ");
+// window.alert("Instructions: Two player matching card game. During round one there will be 3 seconds to view the back of each card for memorization. Each player will take turns clicking on two cards each turn to find the matching set.The player with the most matched sets in the alloted time wins. ");
 document.addEventListener('DOMContentLoaded', () => {
   
 // Card sets Array
@@ -32,12 +32,12 @@ const cardSet =[
     },
     {
         car: 'goldLamb',
-        img: 'https://s1.cdn.autoevolution.com/images/news/worlds-most-expensive-lamborghini-the-75m-aventador-carved-out-of-gold-165823-7.jpg'
+        img: 'https://media.wired.com/photos/5927284ff3e2356fd800b9b4/master/w_1600%2Cc_limit/03_CHIRON_34-front_WEB.jpg'
     },
    
     {
         car: 'i8',
-        img: 'src/images/fries.png'
+        img: 'https://www.westcoastexoticcars.com/imagetag/49/main/l/Used-2016-BMW-i8-1610048744.jpg'
     },
     {
         car: 'Lamb',
@@ -57,13 +57,16 @@ const cardSet =[
     },
     {
         car: 'goldLamb',
-        img: 'https://s1.cdn.autoevolution.com/images/news/worlds-most-expensive-lamborghini-the-75m-aventador-carved-out-of-gold-165823-7.jpg'
+        img: 'https://media.wired.com/photos/5927284ff3e2356fd800b9b4/master/w_1600%2Cc_limit/03_CHIRON_34-front_WEB.jpg'
     }
     
 ]
 
 cardSet.sort(() => 0.5 - Math.random())
 console.log(cardSet);
+let playerChoices = [];
+let choiceIds = [];
+
 
 //Popup
 const showPopup = (msg) => {
@@ -82,25 +85,29 @@ function MyBoard(){
         card.setAttribute('data-id', i)
         card.setAttribute("class", "cardsize")
         card.addEventListener('click', flipCard)
+        card.style.margin = "4px";
         board.appendChild(card)
         showPopup("Lets Begin!");
     }
 }
 
-MyBoard();
+setTimeout(MyBoard(), 150)
+
+// MyBoard();
 
 //Flip Card Function
 function flipCard(){
-    const cardChoice = this.getAttribute('data-id')
-    cardsChosen.push(cardSet[cardChoice].name)  
-    cardsChosenId.push(cardChoice)  
-    this.setAttribute('src', cardSet[cardChoice].img)
+    console.log('clicked')
+    let choice = this.getAttribute('data-id')
+    playerChoices.push(cardSet[choice].name)  
+    choiceIds.push(choice)  
+    this.setAttribute('src', cardSet[choice].img)
+    alert("New Image should show");
     if (cardsChosen.length === 2){
         setTimeout(checkForMatch, 5)
     }
     console.log(cardsChosen); 
 }
-flipCard();
 
 // on click function
 imgs = document.querySelectorAll("img");
