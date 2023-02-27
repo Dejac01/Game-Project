@@ -84,8 +84,8 @@ function MyBoard(){
         card.setAttribute('src', 'https://i0.wp.com/www.car-revs-daily.com/wp-content/uploads/2014/03/LaFerrari-NERO-Animated-Turntable-GIF.gif?ssl=1')
         card.setAttribute('data-id', i)
         card.setAttribute("class", "cardsize")
-        card.addEventListener('click', flipCard)
-        card.style.margin = "5px";
+        card.addEventListener('click', showCard)
+        card.style.margin = "6px";
         board.appendChild(card)
         showPopup("Lets Begin!");
     }
@@ -96,7 +96,7 @@ setTimeout(MyBoard(), 150)
 // MyBoard();
 
 //Flip Card Function
-function flipCard(){
+function showCard(){
     console.log('clicked')
     let choice = this.getAttribute('data-id')
     playerChoices.push(cardSet[choice].name)  
@@ -112,7 +112,7 @@ function flipCard(){
 // on click function
 imgs = document.querySelectorAll("img");
 Array.from(imgs).forEach(img => 
-img.addEventListener("click", flipCard)
+img.addEventListener("click", showCard)
 );
 
 
