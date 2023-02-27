@@ -6,7 +6,7 @@
 //The player with the most matched sets in the alloted time wins. 
 
 document.addEventListener('DOMContentLoaded', () => {
-  
+    window.alert("Instructions: Two player matching card game. During round one there will be 3 seconds to view the back of each card for memorization. Each player will take turns clicking on two cards each turn to find the matching set.The player with the most matched sets in the alloted time wins. ");
 // Card sets Array
 const cardSet =[
     {
@@ -82,6 +82,7 @@ function MyBoard(){
         card.setAttribute("class", "cardsize")
         card.addEventListener('click', flipCard)
         board.appendChild(card)
+        showPopup("Lets Begin!");
     }
 }
 
