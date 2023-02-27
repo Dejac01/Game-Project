@@ -65,10 +65,10 @@ cardSet.sort(() => 0.5 - Math.random())
 console.log(cardSet);
 
 
-//Banner
-const showBanner = (msg) => {
-    let bannerDisplay = document.querySelector(".banner");
-    bannerDisplay.innerHTML = msg;
+//Popup
+const showPopup = (msg) => {
+    let popupDisplay = document.querySelector(".popup");
+    popupDisplay.innerHTML = msg;
   };
 
 //Board Function
@@ -93,7 +93,7 @@ function flipCard(){
     cardsChosenId.push(cardChoice)  
     this.setAttribute('src', cardSet[cardChoice].img)
     if (cardsChosen.length === 2){
-        setTimeout(checkForMatch, 10)
+        setTimeout(checkForMatch, 5)
     }
     console.log(cardsChosen); 
 }
@@ -117,5 +117,7 @@ function arrangeCard() {
 //Check for match function
 
 
-//Rematch functionn
+//Rematch function
+
+
 })
