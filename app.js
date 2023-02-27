@@ -79,6 +79,7 @@ function MyBoard(){
         const card = document.createElement('img');
         card.setAttribute('src', 'https://i0.wp.com/www.car-revs-daily.com/wp-content/uploads/2014/03/LaFerrari-NERO-Animated-Turntable-GIF.gif?ssl=1')
         card.setAttribute('data-id', i)
+        card.setAttribute("class", "cardsize")
         card.addEventListener('click', flipCard)
         board.appendChild(card)
     }
@@ -99,10 +100,12 @@ function flipCard(){
 }
 flipCard();
 
+// on click function
+imgs = document.querySelectorAll("img");
+Array.from(imgs).forEach(img => 
+img.addEventListener("click", flipCard)
+);
 
-    
-
-// Add click function for images
 
 
 // arrangeCard function using Math.random
