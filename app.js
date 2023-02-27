@@ -69,7 +69,7 @@ console.log(cardSet);
 const showPopup = (msg) => {
     let popupDisplay = document.querySelector(".popup");
     popupDisplay.innerHTML = msg;
-  };
+  }; 
 
 //Board Function
 const board = document.querySelector('.board')
