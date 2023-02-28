@@ -222,7 +222,7 @@ if (Player1Score > Player2Score) {
 }else {alert('Youve Tied!')}
 clearOut();
 MyBoard();}
-}
+
   //Rematch function
 
 
