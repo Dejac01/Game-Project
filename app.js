@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Announce Winner
 function announceWinner () {
 if (Player1Score > Player2Score) {
-    alert('Player 1 wins! Click ok for restart!')
+    alert('Player 1 wins! Click ok to restart!')
 }else if (Player2Score > Player1Score) {
     alert('Player 2 wins! Click ok to restart!')
 }else {alert('Youve Tied! Click ok for rematch!')}
