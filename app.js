@@ -219,10 +219,9 @@ if (Player1Score > Player2Score) {
     alert('Player 1 wins!')
 }else if (Player2Score > Player1Score) {
     alert('Player 2 wins!')
-}else {alert('Youve Tied!')}
+}else {alert('Youve Tied! Click ok for rematch!')}
 clearOut();
 MyBoard();}
-
   //Rematch function
 
 
