@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
       card.setAttribute("data-id", i);
       card.setAttribute("class", "cardsize");
       card.addEventListener("click", showCard);
-      card.style.margin = "6px";
+      card.style.margin = "8px";
       board.appendChild(card);
       showPopup("Lets Begin!");
     }
