@@ -102,8 +102,8 @@ function showCard(){
     playerChoices.push(cardSet[choice].name)  
     choiceIds.push(choice)  
     this.setAttribute('src', cardSet[choice].img)
-    if (cardsChosen.length === 2){
-        setTimeout(checkForMatch, 5)
+    if (playerChoices.length === 2){
+        setTimeout(matchFunction, 15)
     }
     console.log(cardsChosen); 
 }
@@ -124,9 +124,39 @@ function arrangeCard() {
 arrangeCard();
 
 //Timer Function
+//Function same card alert
+function sameCardAlert(cards,Id1, Id2) {
+    alert('You have clicked the same image');
+    cards[Id1].setAttribute('src', 'https://us.123rf.com/450wm/lkeskinen/lkeskinen1802/lkeskinen180202844/95589838-pick-me-rubber-stamp-grunge-design-with-dust-scratches-effects-can-be-easily-removed-for-a-clean.jpg?ver=6') 
+    cards[Id2].setAttribute('src', 'https://us.123rf.com/450wm/lkeskinen/lkeskinen1802/lkeskinen180202844/95589838-pick-me-rubber-stamp-grunge-design-with-dust-scratches-effects-can-be-easily-removed-for-a-clean.jpg?ver=6')  
 
-//Check for match function
+}
 
+//match found
+function matchFound(){
+    cards[Id1].setAttribute('src', 'https://www.shutterstock.com/image-vector/abstract-grey-smooth-gradient-background-260nw-1022786422.jpg') 
+    cards[Id2].setAttribute('src', 'https://www.shutterstock.com/image-vector/abstract-grey-smooth-gradient-background-260nw-1022786422.jpg') 
+    cards[Id1].removeEventListener('click', flipCard)
+    cards[Id2].removeEventListener('click', flipCard)
+    cardsWon.push(cardsChosen)
+// call set player score
+}
+
+// Game Function
+function matchFunction() {
+    
+const cards = document.querySelectorAll('img')
+if (choiceIds[0] == choiceIds[1]){
+   sameCardAlert(cards, choiceIds[0], choiceIds[1]); 
+}
+else if (playerChoices[0] === playerChoices[1]){
+    
+}
+    alert('You have a match')
+}
+
+
+    
 
 //Rematch function
 
