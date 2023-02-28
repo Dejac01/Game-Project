@@ -124,7 +124,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   arrangeCard();
 
-  function setPlayerScore(){
+  //Set player score function
+    function setPlayerScore(){
     if(Player1){
         // give points to player one
         Player1Score = Player1Score + 1
@@ -218,9 +219,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Announce Winner
 function announceWinner () {
 if (Player1Score > Player2Score) {
-    alert('Player 1 wins!')
+    alert('Player 1 wins! Click ok for restart!')
 }else if (Player2Score > Player1Score) {
-    alert('Player 2 wins!')
+    alert('Player 2 wins! Click ok to restart!')
 }else {alert('Youve Tied! Click ok for rematch!')}
 
 }
