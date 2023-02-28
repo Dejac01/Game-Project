@@ -210,6 +210,8 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log('cardSet', cardSet.length)
     if (cardsDone.length === cardSet.length) {
       announceWinner();
+      resetBoard(cards);
+      clearOut();
     }
 
   }
@@ -220,9 +222,25 @@ if (Player1Score > Player2Score) {
 }else if (Player2Score > Player1Score) {
     alert('Player 2 wins!')
 }else {alert('Youve Tied! Click ok for rematch!')}
-clearOut();
-MyBoard();}
-  //Rematch function
 
+}
+  //Remove board function
+function resetBoard (cards) { 
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].remove()
+      }
+      resetValues();
+      MyBoard();
+}
+
+//reset values
+function resetValues() {
+clearOut();
+Player1Score = 0
+Player2Score = 0
+Player1 = true;
+Player1Results.innerHTML=0
+Player2Results.innerHTML=0
+}
 
 });
