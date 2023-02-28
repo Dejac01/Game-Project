@@ -133,7 +133,7 @@ function sameCardAlert(cards,Id1, Id2) {
 }
 
 //match found
-function matchFound(){
+function matchFound(cards, Id1, Id2){
     cards[Id1].setAttribute('src', 'https://www.shutterstock.com/image-vector/abstract-grey-smooth-gradient-background-260nw-1022786422.jpg') 
     cards[Id2].setAttribute('src', 'https://www.shutterstock.com/image-vector/abstract-grey-smooth-gradient-background-260nw-1022786422.jpg') 
     cards[Id1].removeEventListener('click', flipCard)
@@ -141,7 +141,6 @@ function matchFound(){
     cardsWon.push(cardsChosen)
 // call set player score
 }
-
 // Game Function
 function matchFunction() {
     
@@ -150,9 +149,10 @@ if (choiceIds[0] == choiceIds[1]){
    sameCardAlert(cards, choiceIds[0], choiceIds[1]); 
 }
 else if (playerChoices[0] === playerChoices[1]){
-    
+    matchFound(cards, choiceIds[0], choiceIds[1]);
+    alert('You have a match')   
 }
-    alert('You have a match')
+
 }
 
 
