@@ -141,6 +141,21 @@ function matchFound(cards, Id1, Id2){
     cardsWon.push(cardsChosen)
 // call set player score
 }
+
+// clear out
+function clearOut() {
+    playerChoices = []
+  choiceIds = []
+}
+
+//no match
+function noMatch (cards, Id1, Id2) {
+    cards[Id1].setAttribute('src', 'images/blank.png')
+    cards[Id2].setAttribute('src', 'images/blank.png')
+    alert('No Match!')
+}
+
+
 // Game Function
 function matchFunction() {
     
@@ -152,8 +167,18 @@ else if (playerChoices[0] === playerChoices[1]){
     matchFound(cards, choiceIds[0], choiceIds[1]);
     alert('You have a match')   
 }
-
+else {
+    cards[optionOneId].setAttribute('src', 'images/blank.png')
+    cards[optionTwoId].setAttribute('src', 'images/blank.png')
+    alert('Sorry, try again')
+  }
+  
+  resultDisplay.textContent = cardsWon.length
+  if  (cardsWon.length === cardArray.length/2) {
+    resultDisplay.textContent = 'Congratulations! You found them all!'
+  }
 }
+
 
 
     
