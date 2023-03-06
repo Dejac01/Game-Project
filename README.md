@@ -9,8 +9,7 @@ document.querySelector,
 createElement,
 and instructions for the game utilizing the alert function to begin,
 
-You may have to refresh a few times to get the game to fully load
-
+The game is still a work in progress but it is functional and enjoyable! You may have to refresh the page to get the game to fully load
 
 INSTRUCTIONS:
 

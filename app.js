@@ -4,12 +4,11 @@
 //Each player will take turns clicking on two cards each turn to find the matching set
 //Second round will increase in difficulty with less time to view cards, less time to match cards and more cards will be added
 //The player with the most matched sets in the alloted time wins.
-
 // window.alert("Instructions: Two player matching card game. During round one there will be 3 seconds to view the back of each card for memorization. Each player will take turns clicking on two cards each turn to find the matching set.The player with the most matched sets in the alloted time wins. ");
+window.alert("Welcome to the Pokemon Card Match Game! Heres the only rule of the game: Have Fun!");
 document.addEventListener("DOMContentLoaded", () => {
 
-  window.alert("Welcome to the Pokemon Card Match Game! Heres the only rule of the game: Have Fun!");
-  
+
   // Card sets Array
   const cardSet = [
     {
