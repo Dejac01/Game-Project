@@ -1,53 +1,58 @@
- 
- body{
-    background-image: url(https://www.pockettactics.com/wp-content/sites/pockettactics/2023/01/Pok%C3%A9mon-wallpapers-6.jpg);
-background-size: cover;}
- 
-
- .board{
-    display: flex;
-    flex-wrap: wrap;
-    height:450px;
-    width: 1000px;
-    border: solid rgb(255, 255, 255);
-    margin: auto;
-  }
-  
-  
-  .scores { 
-            display: flex; 
-            justify-content: space-between; 
-            padding: 20px 30px; 
-            font-size: 23px; 
-            color: white;
-            font-size: 2em;
-           /* border: solid white; */
-            } 
-
-            .title{
-                color: white;
-                text-align: center;
-                font-size: 3em;
-                font-style: italic;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                animation: color;
-                background-color: black;
-                animation-duration: 4s;
-                
-            }
-
-            .cardsize{
-                width: 150px;
-                height: 150px;
-                cursor: alias;
-            }
-
-            @keyframes color {
-               /* from {background-color: black;}
-                to {background-color: rgb(201, 26, 201);} */
-                0%   {background-color: black;} 
-                25%  {background-color: orangered;}
-                50%  {background-color: blue;}
-                100% {background-color: rgb(26, 201, 146);}
+body {
+  background-image: url(https://www.pockettactics.com/wp-content/sites/pockettactics/2023/01/Pok%C3%A9mon-wallpapers-6.jpg);
+  background-size: cover;
 }
-              
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  height: 550px;
+  width: 1050px;
+  border: solid rgb(255, 255, 255);
+  margin: auto;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  font-size: 23px;
+  color: white;
+  font-size: 2em;
+  /* border: solid white; */
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  animation: color;
+  background-color: rgb(39, 44, 196);
+  /* background-size: contain; */
+  animation-duration: 4s;
+}
+
+.cardsize {
+  width: 150px;
+  height: 150px;
+  cursor: alias;
+}
+
+@keyframes color {
+  /* from {background-color: black;}
+                to {background-color: rgb(201, 26, 201);} */
+  0% {
+    background-color: rgb(231, 18, 18);
+  }
+  25% {
+    background-color: orangered;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: rgb(26, 201, 146);
+  }
+}
