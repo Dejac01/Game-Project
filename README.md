@@ -9,9 +9,9 @@ document.querySelector,
 createElement,
 and instructions for the game utilizing the alert function to begin,
 
-The game is still a work in progress but it is functional and enjoyable! You may have to refresh the page a time or two to get the game board to fully load
+The game is still a work in progress but it is functional and enjoyable! 
 
-INSTRUCTIONS:
+INSTRUCTIONS: This game is a two-player game and intended to be played utilizing one device with a larger screen format (Ipad or Desktop).
 
 Player one starts by flipping over one card before deciding to flip over another
 
