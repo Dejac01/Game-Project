@@ -6,8 +6,8 @@ body {
 .board {
   display: flex;
   flex-wrap: wrap;
-  height: 550px;
-  width: 1050px;
+  height: 450px;
+  width: 1000px;
   border: solid rgb(255, 255, 255);
   margin: auto;
 }

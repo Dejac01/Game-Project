@@ -30,7 +30,7 @@ const startPage = () => {
     },
     {
       car: "5",
-      img: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.ebayimg.com%2Fimages%2Fg%2Fq04AAOSw3AJjlKZM%2Fs-l1200.webp&tbnid=U3ZYIXJU4NOY0M&vet=12ahUKEwi86r_66MiAAxUOgokEHeLtARUQMygFegUIARCUAw..i&imgrefurl=https%3A%2F%2Fwww.ebay.com%2Fitm%2F175527477488&docid=wtYexN23oCGghM&w=1200&h=983&q=pokemon%20cards&ved=2ahUKEwi86r_66MiAAxUOgokEHeLtARUQMygFegUIARCUAw",
+      img: "https://raw.githubusercontent.com/jherr/fower-pokemon-vue/master/public/pokemon/charmander.jpg",
     },
     {
       car: "6",
@@ -55,7 +55,7 @@ const startPage = () => {
     },
     {
       car: "5",
-      img: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.ebayimg.com%2Fimages%2Fg%2Fq04AAOSw3AJjlKZM%2Fs-l1200.webp&tbnid=U3ZYIXJU4NOY0M&vet=12ahUKEwi86r_66MiAAxUOgokEHeLtARUQMygFegUIARCUAw..i&imgrefurl=https%3A%2F%2Fwww.ebay.com%2Fitm%2F175527477488&docid=wtYexN23oCGghM&w=1200&h=983&q=pokemon%20cards&ved=2ahUKEwi86r_66MiAAxUOgokEHeLtARUQMygFegUIARCUAw",
+      img: "https://raw.githubusercontent.com/jherr/fower-pokemon-vue/master/public/pokemon/charmander.jpg",
     },
     {
       car: "6",
