@@ -1,6 +1,6 @@
 body {
-  background-image: url(https://www.pockettactics.com/wp-content/sites/pockettactics/2023/01/Pok%C3%A9mon-wallpapers-6.jpg);
-  background-size: cover;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9_B3dL9b4KAzOHVSj9hvqnEvA4IiqJdpFYA&usqp=CAU);
+  background-size: auto;
 }
 
 .board {
@@ -29,7 +29,7 @@ body {
   font-style: italic;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   animation: color;
-  background-color: rgb(39, 44, 196);
+  background-color: rgb(9, 9, 10);
   /* background-size: contain; */
   animation-duration: 4s;
 }
